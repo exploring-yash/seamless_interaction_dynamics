@@ -1,0 +1,36 @@
+# Data files (too large for git)
+*.npz
+*.npy
+*.wav
+*.mp4
+*.h5
+*.pkl
+*.tar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
