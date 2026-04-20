@@ -1,0 +1,58 @@
+{
+  "body": {
+    "recommended_bandpass": [
+      0.1171875,
+      1.2890625
+    ],
+    "median_noise_floor_freq": 1.2890625,
+    "quality_pass_rate": 0.8610108303249098,
+    "median_spectral_flatness": 0.7668828507118293,
+    "median_snr_db": 12.050869700397525,
+    "n_signals": 554,
+    "n_skipped_short": 0,
+    "modality_used": "body",
+    "nperseg_used": 256
+  },
+  "fau": {
+    "recommended_bandpass": [
+      0.234375,
+      2.109375
+    ],
+    "median_noise_floor_freq": 3.515625,
+    "quality_pass_rate": 1.0,
+    "median_spectral_flatness": 0.5599202482993519,
+    "median_snr_db": 17.627044231619195,
+    "n_signals": 554,
+    "n_skipped_short": 0,
+    "modality_used": "fau",
+    "nperseg_used": 128
+  },
+  "head": {
+    "recommended_bandpass": [
+      0.1171875,
+      1.2890625
+    ],
+    "median_noise_floor_freq": 1.2890625,
+    "quality_pass_rate": 1.0,
+    "median_spectral_flatness": 0.7113521238059974,
+    "median_snr_db": 20.249593745239498,
+    "n_signals": 554,
+    "n_skipped_short": 0,
+    "modality_used": "head",
+    "nperseg_used": 256
+  },
+  "emotion_valence": {
+    "recommended_bandpass": [
+      0.05859375,
+      0.87890625
+    ],
+    "median_noise_floor_freq": 1.40625,
+    "quality_pass_rate": 1.0,
+    "median_spectral_flatness": 0.4973147628140613,
+    "median_snr_db": 26.572912119772532,
+    "n_signals": 554,
+    "n_skipped_short": 0,
+    "modality_used": "emotion_valence",
+    "nperseg_used": 512
+  }
+}

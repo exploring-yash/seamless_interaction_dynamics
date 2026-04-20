@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "n_labeled": 186,
+  "per_channel": {
+    "head": {
+      "auc": 0.580321665089877,
+      "n": 186,
+      "mean_R_stranger": 0.6420460642283025,
+      "mean_R_familiar": 0.6465033236089758
+    },
+    "gaze": {
+      "auc": 0.4368968779564806,
+      "n": 186,
+      "mean_R_stranger": 0.6580537553675044,
+      "mean_R_familiar": 0.6534726383524219
+    },
+    "fau": {
+      "auc": 0.5500473036896879,
+      "n": 186,
+      "mean_R_stranger": 0.6358032436098725,
+      "mean_R_familiar": 0.6390037665635596
+    }
+  },
+  "paramagnetic": {
+    "status": "ok",
+    "per_channel": {
+      "head": {
+        "auc": 0.5746452223273415,
+        "n": 186,
+        "mean_param_stranger": 0.5059584707294188,
+        "mean_param_familiar": 0.5136281588420492
+      },
+      "gaze": {
+        "auc": 0.46613055818353827,
+        "n": 186,
+        "mean_param_stranger": 0.5315769214083385,
+        "mean_param_familiar": 0.5253225044840967
+      },
+      "fau": {
+        "auc": 0.558561967833491,
+        "n": 186,
+        "mean_param_stranger": 0.4986524158795663,
+        "mean_param_familiar": 0.5055861864085485
+      }
+    }
+  }
+}

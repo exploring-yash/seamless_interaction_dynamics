@@ -1,0 +1,32 @@
+# Seamless Interaction Dynamics — Python dependencies
+#
+# Install with:  pip install -r requirements.txt
+#
+# Notes:
+#   - Tested against Python 3.10+. Google Colab base image satisfies most;
+#     dtaidistance + hmmlearn + librosa + ewstools usually need an explicit install.
+#   - torch is only required by the differentiable-Kuramoto demo cell in
+#     measuring_synchrony.ipynb. Install via the official wheel matching your
+#     CUDA version if you want to run that cell.
+
+# Core scientific stack
+numpy>=1.24
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.12
+
+# Statistics + machine learning
+scikit-learn>=1.3
+statsmodels>=0.14
+
+# Specialized signal-processing
+librosa>=0.10           # F0 extraction (pyin) for prosody pipeline
+hmmlearn>=0.3.0         # Gaussian-HMM regime segmentation in signal_utils
+dtaidistance>=2.3       # Dynamic Time Warping (defensive import)
+
+# Dataset / I/O
+huggingface-hub>=0.20   # Dataset download (seamless_data_pipeline.ipynb)
+
+# Optional — only needed for the Cell 7 "Differentiable Kuramoto Forward Pass" demo
+# torch>=2.0
