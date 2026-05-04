@@ -178,7 +178,8 @@
       "total_events": 23,
       "mean_events_per_dyad": 0.12365591397849462,
       "target_fpr": 0.05,
-      "reference": "Boettiger & Hastings 2012, Proc R Soc B 279:4734-4739"
+      "reference": "Boettiger & Hastings 2012, Proc R Soc B 279:4734-4739",
+      "n_surrogates_per_dyad": 200
     }
   },
   "audit_provenance": {
@@ -190,5 +191,7 @@
       "verdict-merge block"
     ],
     "event_counts_note": "n_events_effective (654) = total tau-computable events across horizons. n_events_by_horizon[60] (589) = events with valid pre-window geometry at the primary 60s horizon. Null distribution size per indicator-horizon = N_TIME_SHUFFLES x valid-pre-window event count."
-  }
+  },
+  "null_distribution_size_per_indicator": 7150,
+  "null_distribution_note": "7150 = N_TIME_SHUFFLES (50) x valid-pre-window event count (143). 143 events have valid pre-window geometry at h=60 (subset of n_events_by_horizon[60]=589 due to window-validity filtering inside _indicators_over_window)."
 }

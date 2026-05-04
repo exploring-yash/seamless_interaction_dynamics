@@ -63,6 +63,6 @@
   "min_signal_frames": 640,
   "n_components_cap": 5,
   "scaler_fit_inside_fold": true,
-  "audit_provenance": "n_frames columns checked for duration confound; see auc_no_nframes_v6_4_2 for residualized estimate",
+  "audit_provenance": "n_frames columns checked for duration confound; see auc_no_nframes_residualized for residualized estimate",
   "ci_method": "Hanley-McNeil normal approximation; positive class = familiar (majority); SE invariant under class-flip"
 }

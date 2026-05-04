@@ -14,5 +14,8 @@
   "note": "MI computed on CCA_1 projection only; MI value is a LOWER BOUND on full-feature MI because CCA_1 discards variance from components \u22652. See \u00a79 per-modality CCA for multi-dim comparison.",
   "min_signal_frames": 200,
   "scaler_fit_inside_fold": true,
-  "reference": "Kraskov, Stogbauer, Grassberger 2004, PRE 69:066138"
+  "reference": "Kraskov, Stogbauer, Grassberger 2004, PRE 69:066138",
+  "fold_mean_auc": 0.553,
+  "fold_std_auc": 0.142,
+  "fold_stats_note": "Mean and std of MI-based AUC across the 5 outer cross-validation folds."
 }
