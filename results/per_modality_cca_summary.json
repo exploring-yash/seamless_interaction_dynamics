@@ -1,0 +1,68 @@
+{
+  "n_dyads": 186,
+  "auc": 0.8024597918637654,
+  "auc_no_nframes_residualized": 0.7776726584673604,
+  "ci95_auc_no_nframes_residualized": [
+    0.7040257008318175,
+    0.8513196161029034
+  ],
+  "auc_nframes_only": 0.7072847682119205,
+  "importance_fractions_residualized": {
+    "body_r_mean": 0.4126178186249796,
+    "body_r_max": 0.034575083307944635,
+    "body_r_std": 0.15359080537713451,
+    "fau_r_mean": 0.1425620526237604,
+    "fau_r_max": 0.040751234778974674,
+    "fau_r_std": 0.039064327806773595,
+    "head_r_mean": 0.09532909832087993,
+    "head_r_max": 0.060921815580523106,
+    "head_r_std": 0.020587763578796055
+  },
+  "importance_fit": "residualized_9_feature_in_sample",
+  "feature_cols": [
+    "body_r_mean",
+    "body_r_max",
+    "body_r_std",
+    "fau_r_mean",
+    "fau_r_max",
+    "fau_r_std",
+    "head_r_mean",
+    "head_r_max",
+    "head_r_std"
+  ],
+  "feature_cols_all_used": [
+    "body_r_mean",
+    "body_r_max",
+    "body_r_std",
+    "body_n_frames",
+    "fau_r_mean",
+    "fau_r_max",
+    "fau_r_std",
+    "fau_n_frames",
+    "head_r_mean",
+    "head_r_max",
+    "head_r_std",
+    "head_n_frames"
+  ],
+  "feature_cols_no_nframes": [
+    "body_r_mean",
+    "body_r_max",
+    "body_r_std",
+    "fau_r_mean",
+    "fau_r_max",
+    "fau_r_std",
+    "head_r_mean",
+    "head_r_max",
+    "head_r_std"
+  ],
+  "cca_failures_by_modality": {
+    "body": 0,
+    "fau": 0,
+    "head": 0
+  },
+  "min_signal_frames": 640,
+  "n_components_cap": 5,
+  "scaler_fit_inside_fold": true,
+  "audit_provenance": "n_frames columns checked for duration confound; see auc_no_nframes_v6_4_2 for residualized estimate",
+  "ci_method": "Hanley-McNeil normal approximation; positive class = familiar (majority); SE invariant under class-flip"
+}

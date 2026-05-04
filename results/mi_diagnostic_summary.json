@@ -1,0 +1,18 @@
+{
+  "n_dyads": 186,
+  "mi_auc": 0.5629139072847681,
+  "cca_auc_baseline": 0.529,
+  "delta_mi_minus_cca": 0.03391390728476806,
+  "linearity_limit": false,
+  "k_neighbors": 5,
+  "window_sizes_frames": [
+    30,
+    90,
+    150
+  ],
+  "cca_dim_used": 1,
+  "note": "MI computed on CCA_1 projection only; MI value is a LOWER BOUND on full-feature MI because CCA_1 discards variance from components \u22652. See \u00a79 per-modality CCA for multi-dim comparison.",
+  "min_signal_frames": 200,
+  "scaler_fit_inside_fold": true,
+  "reference": "Kraskov, Stogbauer, Grassberger 2004, PRE 69:066138"
+}

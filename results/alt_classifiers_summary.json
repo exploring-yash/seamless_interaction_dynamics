@@ -1,0 +1,106 @@
+{
+  "n_dyads": 186,
+  "n_features": 25,
+  "sklearn_version": "1.6.1",
+  "hgb_class_weight_enabled": true,
+  "balancing": {
+    "auc_balanced_lr": 0.7415326395458846,
+    "auc_smote_lr": 0.7220435193945127,
+    "auc_balanced_rf": 0.6863765373699149,
+    "ci95_auc_balanced_lr": [
+      0.6385064102564103,
+      0.838679737874965
+    ],
+    "ci95_auc_smote_lr": [
+      0.6135383428122428,
+      0.8215889312671769
+    ],
+    "ci95_auc_balanced_rf": [
+      0.5872159056660639,
+      0.7935074627210867
+    ]
+  },
+  "nested_cv": {
+    "auc_lr": 0.689120151371807,
+    "best_params_lr": [
+      {
+        "clf__C": 0.1
+      },
+      {
+        "clf__C": 0.01
+      },
+      {
+        "clf__C": 10.0
+      },
+      {
+        "clf__C": 0.1
+      },
+      {
+        "clf__C": 0.01
+      }
+    ],
+    "ci95_auc_lr": [
+      0.5844698827775688,
+      0.7939526867217266
+    ],
+    "auc_hgb": 0.6813623462630085,
+    "best_params_hgb": [
+      {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 5
+      },
+      {
+        "clf__learning_rate": 0.05,
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 10
+      },
+      {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 10
+      },
+      {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 5
+      },
+      {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 5
+      }
+    ],
+    "ci95_auc_hgb": [
+      0.5781634846921225,
+      0.7843416783987267
+    ],
+    "auc_svm": 0.6717123935666982,
+    "best_params_svm": [
+      {
+        "clf__C": 0.1,
+        "clf__kernel": "linear"
+      },
+      {
+        "clf__C": 0.1,
+        "clf__kernel": "linear"
+      },
+      {
+        "clf__C": 10.0,
+        "clf__kernel": "linear"
+      },
+      {
+        "clf__C": 0.1,
+        "clf__kernel": "linear"
+      },
+      {
+        "clf__C": 0.1,
+        "clf__kernel": "rbf"
+      }
+    ],
+    "ci95_auc_svm": [
+      0.5564934900129439,
+      0.7760703470766364
+    ]
+  }
+}

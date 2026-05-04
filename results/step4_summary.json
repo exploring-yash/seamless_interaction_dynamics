@@ -1,0 +1,13 @@
+{
+  "primary_model": "M1_null_z",
+  "primary_auc": 0.529,
+  "primary_auc_ci_lo": 0.44,
+  "primary_auc_ci_hi": 0.62,
+  "cohen_d": -0.03,
+  "result_label": "[NEGATIVE RESULT]",
+  "achieved_power": 0.47,
+  "n_dyads": 186,
+  "n_stranger": 35,
+  "n_familiar": 151,
+  "note": "Sample-run baseline (N=186 dyads). Re-run NB1 to refresh on expanded cohort."
+}

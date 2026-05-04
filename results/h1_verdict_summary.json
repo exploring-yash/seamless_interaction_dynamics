@@ -1,0 +1,194 @@
+{
+  "h1_label": "[NO EFFECT vs NULL]",
+  "rate_either_60": 0.10696095076400679,
+  "rate_2of3_60": 0.01697792869269949,
+  "rate_2of3_by_horizon": {
+    "60": 0.01697792869269949,
+    "90": 0.029411764705882353
+  },
+  "n_events_by_horizon": {
+    "60": 589,
+    "90": 510
+  },
+  "var_cutoff_60": 0.44000000000000006,
+  "ar1_cutoff_60": 0.34274509803921577,
+  "skew_cutoff_60": 0.3380392156862746,
+  "uniform_var_cutoff_60_sanity": 0.4105882352941177,
+  "uniform_ar1_cutoff_60_sanity": 0.3788235294117648,
+  "uniform_skew_cutoff_60_sanity": 0.3333333333333334,
+  "n_events_effective": 654,
+  "H1_SAMPLE_FLOOR_MET": true,
+  "H1_EVENTS_EFFECTIVE_FLOOR_MET": true,
+  "null_method": "circular_moving_blocks_bootstrap_cf_politis_romano_1994",
+  "warning_horizons_s": [
+    60,
+    90
+  ],
+  "primary_horizon_s": 60,
+  "shap_feature_ranking": {
+    "tau_ar1_60": 0.6537922776600289,
+    "tau_var_60": 0.4303425643202472,
+    "tau_skew_60": 0.1558926974041575,
+    "reddening_60": 0.0,
+    "adf_p_60": 0.0
+  },
+  "gbt_cv_auc_mean": 0.8982758620689655,
+  "gbt_cv_auc_std": 0.1393248541437029,
+  "additions": {
+    "mi": {
+      "n_dyads": 186,
+      "mi_auc": 0.5629139072847681,
+      "cca_auc_baseline": 0.529,
+      "delta_mi_minus_cca": 0.03391390728476806,
+      "linearity_limit": false,
+      "k_neighbors": 5,
+      "cca_dim_used": 1,
+      "min_signal_frames": 200
+    },
+    "per_modality_cca": {
+      "n_dyads": 186,
+      "auc": 0.8024597918637654,
+      "feature_cols": [
+        "body_r_mean",
+        "body_r_max",
+        "body_r_std",
+        "fau_r_mean",
+        "fau_r_max",
+        "fau_r_std",
+        "head_r_mean",
+        "head_r_max",
+        "head_r_std"
+      ],
+      "cca_failures_by_modality": {
+        "body": 0,
+        "fau": 0,
+        "head": 0
+      },
+      "min_signal_frames": 640,
+      "n_components_cap": 5
+    },
+    "alt_classifiers": {
+      "n_dyads": 186,
+      "n_features": 25,
+      "sklearn_version": "1.6.1",
+      "hgb_class_weight_enabled": true,
+      "balancing": {
+        "auc_balanced_lr": 0.7415326395458846,
+        "auc_smote_lr": 0.7220435193945127,
+        "auc_balanced_rf": 0.6863765373699149,
+        "ci95_auc_balanced_lr": [
+          0.6385064102564103,
+          0.838679737874965
+        ],
+        "ci95_auc_smote_lr": [
+          0.6135383428122428,
+          0.8215889312671769
+        ],
+        "ci95_auc_balanced_rf": [
+          0.5872159056660639,
+          0.7935074627210867
+        ]
+      },
+      "nested_cv": {
+        "auc_lr": 0.689120151371807,
+        "best_params_lr": [
+          {
+            "clf__C": 0.1
+          },
+          {
+            "clf__C": 0.01
+          },
+          {
+            "clf__C": 10.0
+          },
+          {
+            "clf__C": 0.1
+          },
+          {
+            "clf__C": 0.01
+          }
+        ],
+        "ci95_auc_lr": [
+          0.5844698827775688,
+          0.7939526867217266
+        ],
+        "auc_hgb": 0.6813623462630085,
+        "best_params_hgb": [
+          {
+            "clf__learning_rate": 0.1,
+            "clf__max_depth": 5,
+            "clf__min_samples_leaf": 5
+          },
+          {
+            "clf__learning_rate": 0.05,
+            "clf__max_depth": 5,
+            "clf__min_samples_leaf": 10
+          },
+          {
+            "clf__learning_rate": 0.1,
+            "clf__max_depth": 5,
+            "clf__min_samples_leaf": 10
+          },
+          {
+            "clf__learning_rate": 0.1,
+            "clf__max_depth": 5,
+            "clf__min_samples_leaf": 5
+          },
+          {
+            "clf__learning_rate": 0.1,
+            "clf__max_depth": 5,
+            "clf__min_samples_leaf": 5
+          }
+        ],
+        "ci95_auc_hgb": [
+          0.5781634846921225,
+          0.7843416783987267
+        ],
+        "auc_svm": 0.6717123935666982,
+        "best_params_svm": [
+          {
+            "clf__C": 0.1,
+            "clf__kernel": "linear"
+          },
+          {
+            "clf__C": 0.1,
+            "clf__kernel": "linear"
+          },
+          {
+            "clf__C": 10.0,
+            "clf__kernel": "linear"
+          },
+          {
+            "clf__C": 0.1,
+            "clf__kernel": "linear"
+          },
+          {
+            "clf__C": 0.1,
+            "clf__kernel": "rbf"
+          }
+        ],
+        "ci95_auc_svm": [
+          0.5564934900129439,
+          0.7760703470766364
+        ]
+      }
+    },
+    "calibrated_fpr": {
+      "n_dyads": 186,
+      "total_events": 23,
+      "mean_events_per_dyad": 0.12365591397849462,
+      "target_fpr": 0.05,
+      "reference": "Boettiger & Hastings 2012, Proc R Soc B 279:4734-4739"
+    }
+  },
+  "audit_provenance": {
+    "computation_date": "sample_run",
+    "audit_cycle": "duration-confound + verdict-merge",
+    "audit_targets": [
+      "MI-vs-CCA linearity gate",
+      "calibrated-FPR detector",
+      "verdict-merge block"
+    ],
+    "event_counts_note": "n_events_effective (654) = total tau-computable events across horizons. n_events_by_horizon[60] (589) = events with valid pre-window geometry at the primary 60s horizon. Null distribution size per indicator-horizon = N_TIME_SHUFFLES x valid-pre-window event count."
+  }
+}
